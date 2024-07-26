@@ -1,8 +1,6 @@
-package structure.data.arrayList;
+package structure.data.list;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayListTest {
 
