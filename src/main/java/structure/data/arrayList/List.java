@@ -1,4 +1,4 @@
-package arrayList;
+package structure.data.arrayList;
 
 interface List<E> {
     boolean add(E element);
