@@ -2,7 +2,9 @@ package structure.data.list;
 
 import org.junit.jupiter.api.Test;
 
-class ArrayListTest {
+class MyArrayListTest {
+
+    // TODO : 테스트코드 작성
 
     @Test
     void add() {

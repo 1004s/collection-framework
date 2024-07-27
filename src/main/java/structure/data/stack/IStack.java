@@ -1,6 +1,6 @@
 package structure.data.stack;
 
-interface Stack<E> {
+interface IStack<E> {
 
     void push(E item);
 

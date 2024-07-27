@@ -1,6 +1,6 @@
 package structure.data.list;
 
-interface List<E> {
+interface MyList<E> {
 
     boolean add(E element);
 
