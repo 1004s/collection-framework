@@ -1,4 +1,4 @@
-package structure.data.arrayList;
+package structure.data.list;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

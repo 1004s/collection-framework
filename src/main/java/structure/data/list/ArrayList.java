@@ -1,4 +1,4 @@
-package structure.data.arrayList;
+package structure.data.list;
 
 public class ArrayList<E> implements List<E>{
 
