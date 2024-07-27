@@ -1,17 +1,17 @@
 package structure.data.list;
 
-public class ArrayList<E> implements List<E>{
+public class MyArrayList<E> implements MyList<E>{
 
     private static final int DEFAULT_CAPACITY = 10;
     private int initCapacity;
     private Object[] elementData;
     private int size;
 
-    public ArrayList(){
+    public MyArrayList(){
         this(DEFAULT_CAPACITY);
     }
 
-    public ArrayList(int initCapacity){
+    public MyArrayList(int initCapacity){
         this.elementData = new Object[initCapacity];
         this.initCapacity = initCapacity;
         this.size = 0;

@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ArrayListTest {
+class MyArrayListTest {
 
-    List<Integer> list;
+    MyList<Integer> list;
 
     @BeforeEach
     void setup() {
-        list = new ArrayList<>();
+        list = new MyArrayList<>();
     }
 
     @Test
@@ -44,7 +44,7 @@ class ArrayListTest {
     @Test
     @DisplayName("value를 이용하여 삭제")
     void remove() {
-        List<String> list = new ArrayList<>();
+        MyList<String> list = new MyArrayList<>();
         list.add("a");
         list.add("b");
         list.add("c");
