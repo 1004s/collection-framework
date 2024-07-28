@@ -2,10 +2,10 @@ package structure.data.list;
 
 public class MyArrayList<E> implements MyList<E>{
 
-    private static final int DEFAULT_CAPACITY = 10;
-    private int initCapacity;
-    private Object[] elementData;
-    private int size;
+    protected static final int DEFAULT_CAPACITY = 10;
+    protected int initCapacity;
+    protected Object[] elementData;
+    protected int size;
 
     public MyArrayList(){
         this(DEFAULT_CAPACITY);
