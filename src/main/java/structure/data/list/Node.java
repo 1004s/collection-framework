@@ -1,12 +1,12 @@
 package structure.data.list;
 
 public class Node<E> {
-    // TODO : Node 구현
+
     private E data;
 
-    private Node next;
+    private Node<E> next;
 
-    private Node prev;
+    private Node<E> prev;
 
     public Node(E e) {
         this.data = e;
@@ -20,19 +20,19 @@ public class Node<E> {
         this.data = data;
     }
 
-    public Node getNext() {
+    public Node<E> getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(Node<E> next) {
         this.next = next;
     }
 
-    public Node getPrev() {
+    public Node<E> getPrev() {
         return prev;
     }
 
-    public void setPrev(Node prev) {
+    public void setPrev(Node<E> prev) {
         this.prev = prev;
     }
 }
