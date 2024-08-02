@@ -105,13 +105,13 @@ public class MyLinkedList<E> implements ILinkedList<E> , MyList<E> , Iterable<E>
 
     @Override
     public Iterator<E> iterator() {
-        return new Iterator<E>() {
+        return new Iterator<>() {
 
             Node<E> currentNode = head;
 
             @Override
             public boolean hasNext() {
-                return currentNode == null;
+                return currentNode != null;
             }
 
             @Override
@@ -173,6 +173,7 @@ public class MyLinkedList<E> implements ILinkedList<E> , MyList<E> , Iterable<E>
                 return index;
             }
             node = node.getNext();
+            index++;
         }
         return -1;
     }
