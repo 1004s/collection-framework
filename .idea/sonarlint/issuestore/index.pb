@@ -14,3 +14,15 @@ w
 G.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d,b/4/b4a0b63ce8560bbc5de0f9995c20cc861dc2adb3
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+f
+6src/test/java/structure/data/list/MyArrayListTest.java,7/3/7323aeec2aac620d0411163ce6d6818caa0eae33
+b
+2src/main/java/structure/data/list/ILinkedList.java,e/5/e568efd31efa81197f5d53b72688a648caf65d16
+b
+2src/main/java/structure/data/list/MyArrayList.java,e/3/e37f32bc055718315a084d464c9d4f08aa5bc8e0
+c
+3src/main/java/structure/data/list/MyLinkedList.java,a/f/af3c55727a97dfc111031ce18c97d0786c5fe5aa
+[
++src/main/java/structure/data/list/Node.java,2/5/250cb3cd6540e854713cd6d6ed2027eb591f819b
+]
+-src/main/java/structure/data/list/MyList.java,c/5/c5d4f41179517144b2225983da5b7a39e9c27179
