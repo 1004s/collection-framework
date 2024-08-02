@@ -5,11 +5,11 @@ import java.util.NoSuchElementException;
 
 public class MyLinkedList<E> implements ILinkedList<E> , MyList<E> , Iterable<E> {
 
-    private Node<E> head;
+    protected Node<E> head;
 
-    private Node<E> tail;
+    protected Node<E> tail;
 
-    private int size = 0;
+    protected int size = 0;
 
     @Override
     public void addFirst(E e) {

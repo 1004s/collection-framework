@@ -2,27 +2,37 @@ package structure.data.queue;
 
 import structure.data.list.MyLinkedList;
 
-public class MyQueue<E> extends MyLinkedList<E> implements IQueue<E> {
+import java.util.NoSuchElementException;
 
-    // TODO : MyQueue 구현
+public class MyQueue<E> extends MyLinkedList<E> implements IQueue<E> {
 
     @Override
     public E element() {
-        return null;
+        if(size == 0 || head == null) {
+            throw new NoSuchElementException();
+        }
+        return head.getData();
     }
 
     @Override
     public boolean offer(E e) {
-        return false;
+        addLast(e);
+        return true;
     }
 
     @Override
     public E poll() {
-        return null;
+        if(head == null) {
+            return null;
+        }
+        return removeFirst();
     }
 
     @Override
     public E peek() {
-        return null;
+        if(head == null) {
+            return null;
+        }
+        return head.getData();
     }
 }
