@@ -26,3 +26,5 @@ c
 +src/main/java/structure/data/list/Node.java,2/5/250cb3cd6540e854713cd6d6ed2027eb591f819b
 ]
 -src/main/java/structure/data/list/MyList.java,c/5/c5d4f41179517144b2225983da5b7a39e9c27179
+f
+6src/main/java/structure/data/list/MyArrayListMain.java,9/0/904c78f9fd02623b015535db503d08b26765fcf3
