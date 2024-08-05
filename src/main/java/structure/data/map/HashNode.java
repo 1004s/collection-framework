@@ -29,11 +29,11 @@ public class HashNode<K,V> {
         this.value = value;
     }
 
-    public HashNode getNext() {
+    public HashNode<K,V> getNext() {
         return next;
     }
 
-    public void setNext(HashNode next) {
+    public void setNext(HashNode<K,V> next) {
         this.next = next;
     }
 
