@@ -1,6 +1,8 @@
 package structure.data.map;
 
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 public class MyHashMap<K,V> implements IMap<K,V> {
 
@@ -8,6 +10,7 @@ public class MyHashMap<K,V> implements IMap<K,V> {
     private int capacity;
     private int size;
     private Object[] table;
+    private Set<K> keySet;
 
     public MyHashMap() {
         this(DEFAULT_CAPACITY);
@@ -17,6 +20,7 @@ public class MyHashMap<K,V> implements IMap<K,V> {
         this.capacity = capacity;
         this.size = 0;
         this.table = new Object[capacity];
+        this.keySet = new HashSet<>();
     }
 
     @Override
@@ -25,6 +29,7 @@ public class MyHashMap<K,V> implements IMap<K,V> {
             table[i] = null;
         }
         size = 0;
+        keySet.clear();
     }
 
     @Override
@@ -72,6 +77,7 @@ public class MyHashMap<K,V> implements IMap<K,V> {
         int hash = getIndex(key);
 
         if(table[hash] == null) {
+            keySet.add(key);
             table[hash] = new HashNode<>(hash, key, value);
             size++;
             return null;
@@ -91,6 +97,7 @@ public class MyHashMap<K,V> implements IMap<K,V> {
         }
         table[idx] = null;
         size--;
+        keySet.remove(key);
     }
 
     @Override
@@ -101,4 +108,9 @@ public class MyHashMap<K,V> implements IMap<K,V> {
     private int getIndex(K key) {
         return Math.abs(Objects.hashCode(key)) % capacity;
     }
+
+    public Set<K> keySet() {
+        return keySet;
+    }
+
 }

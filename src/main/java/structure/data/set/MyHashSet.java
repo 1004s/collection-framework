@@ -2,11 +2,10 @@ package structure.data.set;
 
 import structure.data.map.MyHashMap;
 
+import java.util.HashSet;
 import java.util.Iterator;
 
 public class MyHashSet<E> implements ISet<E>, Iterable<E> {
-
-    // TODO : MyHashSet 구현
 
     //dummy object value;
     private static final Object PRESENT = new Object();
@@ -14,41 +13,44 @@ public class MyHashSet<E> implements ISet<E>, Iterable<E> {
 
     @Override
     public boolean add(E item) {
-
-        return false;
+        if(map.containsKey(item)) {
+            return false;
+        }
+        map.put(item, PRESENT);
+        return true;
     }
 
     @Override
     public boolean remove(E o) {
-
+        if(map.containsKey(o)) {
+            map.remove(o);
+            return true;
+        }
         return false;
     }
 
     @Override
     public boolean contains(E o) {
-
-        return false;
+        return map.containsKey(o);
     }
 
     @Override
     public boolean isEmpty() {
-
-        return false;
+        return map.isEmpty();
     }
 
     @Override
     public int size() {
-
-        return 0;
+        return map.size();
     }
 
     @Override
     public void clear() {
-
+        map.clear();
     }
 
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return map.keySet().iterator();
     }
 }
