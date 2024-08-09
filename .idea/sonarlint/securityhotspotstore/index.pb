@@ -28,3 +28,9 @@ c
 -src/main/java/structure/data/list/MyList.java,c/5/c5d4f41179517144b2225983da5b7a39e9c27179
 f
 6src/main/java/structure/data/list/MyArrayListMain.java,9/0/904c78f9fd02623b015535db503d08b26765fcf3
+_
+/src/main/java/structure/data/stack/MyStack.java,a/2/a2ec5e2810e15ae7d489b335e7c6e77b4110de6c
+^
+.src/main/java/structure/data/stack/IStack.java,b/3/b3de7ecf06ced2c24ee09bf6a25f8da208cdc7f8
+c
+3src/main/java/structure/data/stack/MyStackMain.java,2/d/2df2104cf8900c2f0823e6654a076f86612d54b1
